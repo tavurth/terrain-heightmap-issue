@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/test.png-0464728d0eacbca93f6da5871aab1869.stex"
+path="res://.import/height_512_x1_y1.exr-29da9fbcbe805eb37cc7e8c631b4a98a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/test.png"
-dest_files=[ "res://.import/test.png-0464728d0eacbca93f6da5871aab1869.stex" ]
+source_file="res://terrain/height_512_x1_y1.exr"
+dest_files=[ "res://.import/height_512_x1_y1.exr-29da9fbcbe805eb37cc7e8c631b4a98a.stex" ]
 
 [params]
 
