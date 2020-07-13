@@ -6,10 +6,10 @@
 [node name="World" type="Spatial"]
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( -0.160664, 0.665832, -0.728598, 0.9721, 0.234566, -1.59592e-07, 0.170904, -0.70827, -0.684942, 0, 0, 0 )
+transform = Transform( -0.160664, -0.241816, 0.956928, 0.9721, -0.206644, 0.110992, 0.170904, 0.948063, 0.26827, 9.13929, 2.87046, -7.73544 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 0, 0, 0 )
+transform = Transform( -0.5, 0.415713, -0.759725, 0, 0.877255, 0.480025, 0.866025, 0.240012, -0.438628, 11.6352, 8.11621, 6.11798 )
 current = true
 far = 1000.0
 
