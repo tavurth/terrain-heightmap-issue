@@ -1,0 +1,39 @@
+#+TITLE: Convert
+#+TITLE: Generate
+
+* Generate terrain textures
+
+#+begin_src jupyter-python :session py :async yes :results verbatim
+%reload_ext autoreload
+%autoreload 2
+%matplotlib inline
+
+import sys
+import random
+from PIL import Image
+import matplotlib.pyplot as plt
+
+FOLDER = 'terrain'
+
+heightmap = Image.open('./{}/height_512_x1_y1.png'.format(FOLDER))
+width, height = heightmap.size
+
+texture = Image.new('RGB', (width, height))
+
+grey_pixels = heightmap.load()
+rgba_pixels = texture.load()
+
+for i in range(width):
+    for j in range(height):
+        old_pixel = grey_pixels[i,j]
+        rgba_pixels[i,j] = (old_pixel, 0, 0)
+
+
+fig, ax = plt.subplots(figsize=(8, 8))
+ax.imshow(texture, aspect="auto")
+
+texture.save("./{}/converted.png".format(FOLDER))
+#+end_src
+
+#+RESULTS:
+[[file:./.ob-jupyter/facb9c97cf94556cd9d9e0bae0e946e964eef526.png]]

@@ -5,9 +5,8 @@
 
 [node name="HTerrain" type="Spatial"]
 script = ExtResource( 1 )
-map_scale = Vector3( 0.1, 0.1, 0.1 )
 _terrain_data = ExtResource( 2 )
-chunk_size = 32
+chunk_size = 64
 shader_type = "Classic4Lite"
 custom_shader = null
 shader_params/u_ground_uv_scale = 20
@@ -26,4 +25,5 @@ ground/normal_roughness_3 = null
 transform = Transform( 0.433156, 0.901319, 8.88178e-16, -0.839751, 0.403567, 0.363251, 0.327405, -0.157344, 0.931691, 0, 0, 0 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.766045, 0.413176, -0.492404, 0, 0.766044, 0.642788, 0.642787, 0.492404, -0.586824, 24.2713, 9.07641, 0.48225 )
+transform = Transform( -0.766045, 0.413176, -0.492403, 0, 0.766044, 0.642788, 0.642787, 0.492404, -0.586824, 81.9141, 58.9973, 34.7343 )
+far = 1000.0
